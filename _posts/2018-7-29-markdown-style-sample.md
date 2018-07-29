@@ -1,3 +1,6 @@
+* 目录
+{:toc}
+
 ---
 layout: default
 ---
