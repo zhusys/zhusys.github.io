@@ -1,4 +1,4 @@
-#Linux派
+# Linux派
 ---
 
 
@@ -117,14 +117,19 @@ command   [option]   &lt; argument &gt;
 
 #### C1. 显示器
 ###### 接多屏(扩展模式)
+
 ```
 xrandr --output VGA1 --right-of LVDS1
 ```
+
 ###### 竖屏显示
+
 ```
 xrandr --output VGA1 --rotate right
 ```
+
 ###### 显示器分辨率不自动识别
+
 ```
 cvt 1920 1080 60
 xrandr --newmode "1920x1080_60" 173.00 1920 2048 2576 1080 1083 1088 1120 -hsync +vsyn
@@ -135,10 +140,13 @@ xrandr --output VGA1 --mode 1920x1080_60 --right-of LVDS1
 
 #### C2. 锁屏与待机
 ##### 锁屏
+
 ```
 xtrlock
 ```
+
 ##### 待机
+
 ```
 pm-suspend (S2R)
 ```
@@ -163,6 +171,7 @@ pm-suspend (S2R)
 
 
 #### C5.1 释放磁盘空间
+
 ```
 sync
 umount /xxx; du -sh /xxx    **看看mount挂载的盘盖住了,下面实际保持在其它盘上的大量文件**
@@ -177,9 +186,11 @@ echo ' ' >/tmp/xxx [**不中断服务**]
 
 #### C5.2 挂载磁盘空间
 * fat, ntfs 必须用`-o uid=1000, gid=1000, umask=0133, fmask=0133, dmask=0022`挂载
+
             > 否则无法指定权限。因为权限是无法记录在磁盘空间上的，所以必须在mount时指定
 
 * ext3, ext4  直接mount挂载
+
             > 用chown, chmod修改存储空间中的权限，是写在磁盘上的，重启后有效
 
 
