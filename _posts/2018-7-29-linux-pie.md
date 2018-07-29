@@ -4,54 +4,46 @@ linux中实现目标有很多种方法和选择,  请理性看待它们的不同
 
 
 ## A1. 发行版
----
 不同的包管理机制和软件选择哲学
 * RHEL  centos    Fedora
 * SuSe
 * Debian     ubuntu
-* Arch--->Gentoo--->LFS
 
 
 ## A2. 界面
----
 * CLI(tilling-wm)
 * GUI
 
 
 ## A3. 看与思
----
 * WYSIWYG
 * WYTIWYG
 
 
 A4. 编辑器
-    <li>vim(编辑器之神)</li>
-    <li>emacs(神的编辑器)</li>
-    <li>others</li>
+* vim(编辑器之神)
+* emacs(神的编辑器)
+* others
 
 
 ## A5. 终端
----
 * urxvt
 * tmux
 * others(gnome-terminal, putty, SecureCRT)
 
 
 ## A6. shell
----
 * bash
 * zsh
 * others
 
 
 ## A7. 浏览器
----
 * firefox(vimperator)
 * others
 
 
 ## A8.1 鼠标, 键盘, 快捷键
----
 ![正常使用键盘鼠标](/linux-pi/normal-keyboard-mouse.gif)
 
 
@@ -74,13 +66,11 @@ A4. 编辑器
 
 
 ## A9. 键盘的布局
----
 * qwerty
 * dvorak, colemak
 
 
 ## A10. 中文输入法
----
 * 全拼
 * 双拼, 五笔
 
@@ -95,13 +85,11 @@ A4. 编辑器
 
 
 ## B1. 文本查找
----
 * 正则表达式
 * 逻辑或与非
 
 
 ## B2. 文本处理
----
 * sed
 * awk(替代excel)
 * vim(vimdiff)
@@ -110,7 +98,6 @@ A4. 编辑器
 
 
 ## B3. 内容展示
----
 * vim(sytax on)
 * markdown
 * wiki
@@ -121,7 +108,6 @@ A4. 编辑器
 
 
 ## C. 命令行
----
 command   [option]   &lt; argument &gt;
 
 
@@ -155,7 +141,6 @@ pm-suspend (S2R)
 
 
 ## C3. 防止误操作
----
 * alias
 * rm='rm -i --'
 * cp='cp -i'
@@ -165,19 +150,15 @@ pm-suspend (S2R)
 
 
 ## C4. 显示优化
----
 * grep='grep --color=always'
 * ls='ls --color=auto'
 * tree
 * pstree
 
-![bash-color](/linux-pi/prompt-c---bash.png)
 
-![mysql-color](/linux-pi/prompt-c---mysql.png)
 
 
 ## C5.1 释放磁盘空间
----
 ```
 sync
 umount /xxx; du -sh /xxx    **看看mount挂载的盘盖住了,下面实际保持在其它盘上的大量文件**
@@ -191,7 +172,6 @@ echo ' ' >/tmp/xxx [**不中断服务**]
 
 
 ## C5.2 挂载磁盘空间
----
 * fat, ntfs 必须用`-o uid=1000, gid=1000, umask=0133, fmask=0133, dmask=0022`挂载
             > 否则无法指定权限。因为权限是无法记录在磁盘空间上的，所以必须在mount时指定
 
@@ -209,20 +189,17 @@ echo ' ' >/tmp/xxx [**不中断服务**]
 
 
 ## D1. 找命令参数
----
 * xxx --help
 * man xxx
 
 
 ## D2. 找文件路径
----
 * find
 * locate
 * which
 
 
 ## D3. 找其它
----
 * dpkg -S \`which man\`
 * apt-cache search xxx
 * history
