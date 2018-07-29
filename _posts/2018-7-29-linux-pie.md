@@ -116,7 +116,8 @@ linux中实现目标有很多种方法和选择,  请理性看待它们的不同
 
 
 
-### C. 命令行
+## C. 命令行
+---
 command   [option]   &lt; argument &gt;
 
 
