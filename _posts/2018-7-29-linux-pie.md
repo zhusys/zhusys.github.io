@@ -1,5 +1,4 @@
 # Linux派
----
 <br>
 <br>
 
@@ -9,19 +8,19 @@
 linux中实现目标有很多种方法和选择,  请理性看待它们的不同
 
 
-#### A1. 发行版
+### A1. 发行版
 不同的包管理机制和软件选择哲学
 * RHEL  centos    Fedora
 * SuSe
 * Debian     ubuntu
 
 
-#### A2. 界面
+### A2. 界面
 * CLI(tilling-wm)
 * GUI
 
 
-#### A3. 看与思
+### A3. 看与思
 * WYSIWYG
 * WYTIWYG
 
@@ -32,51 +31,51 @@ linux中实现目标有很多种方法和选择,  请理性看待它们的不同
 * others
 
 
-#### A5. 终端
+### A5. 终端
 * urxvt
 * tmux
 * others(gnome-terminal, putty, SecureCRT)
 
 
-#### A6. shell
+### A6. shell
 * bash
 * zsh
 * others
 
 
-#### A7. 浏览器
+### A7. 浏览器
 * firefox(vimperator)
 * others
 
 
-#### A8.1 鼠标, 键盘, 快捷键
+### A8.1 鼠标, 键盘, 快捷键
 ![正常使用键盘鼠标](/linux-pi/normal-keyboard-mouse.gif)
 
 
-#### A8.2 鼠标, 键盘, 快捷键
-##### 鼠标:
+### A8.2 鼠标, 键盘, 快捷键
+#### 鼠标:
 * thinkpad的trackpoint(小红点)
 * apple的MultiTouchTrackPad(多点触控板)
 * 轨迹球
 * others
 
-##### *键盘*:
+#### *键盘*:
 * hhkb+
 * ergodox (kinesis, maltron)
 * others {微软4000, 机械键盘 (GH60)}
 
-##### 快捷键:
+#### 快捷键:
 * Ctrl-, Alt-, Meta-//Super-
 * Esc, Tab, Space, Enter, F1-F12
 * others
 
 
-#### A9. 键盘的布局
+### A9. 键盘的布局
 * qwerty
 * dvorak, colemak
 
 
-#### A10. 中文输入法
+### A10. 中文输入法
 * 全拼
 * 双拼, 五笔
 
@@ -90,12 +89,12 @@ linux中实现目标有很多种方法和选择,  请理性看待它们的不同
  
 
 
-#### B1. 文本查找
+### B1. 文本查找
 * 正则表达式
 * 逻辑或与非
 
 
-#### B2. 文本处理
+### B2. 文本处理
 * sed
 * awk(替代excel)
 * vim(vimdiff)
@@ -103,7 +102,7 @@ linux中实现目标有很多种方法和选择,  请理性看待它们的不同
 * python
 
 
-#### B3. 内容展示
+### B3. 内容展示
 * vim(sytax on)
 * markdown
 * wiki
@@ -113,24 +112,24 @@ linux中实现目标有很多种方法和选择,  请理性看待它们的不同
 
 
 
-#### C. 命令行
+### C. 命令行
 command   [option]   &lt; argument &gt;
 
 
-#### C1. 显示器
-###### 接多屏(扩展模式)
+### C1. 显示器
+##### 接多屏(扩展模式)
 
 ```
 xrandr --output VGA1 --right-of LVDS1
 ```
 
-###### 竖屏显示
+##### 竖屏显示
 
 ```
 xrandr --output VGA1 --rotate right
 ```
 
-###### 显示器分辨率不自动识别
+##### 显示器分辨率不自动识别
 
 ```
 cvt 1920 1080 60
@@ -140,21 +139,21 @@ xrandr --output VGA1 --mode 1920x1080_60 --right-of LVDS1
 ```
 
 
-#### C2. 锁屏与待机
-##### 锁屏
+### C2. 锁屏与待机
+#### 锁屏
 
 ```
 xtrlock
 ```
 
-##### 待机
+#### 待机
 
 ```
 pm-suspend (S2R)
 ```
 
 
-#### C3. 防止误操作
+### C3. 防止误操作
 * alias
 * rm='rm -i --'
 * cp='cp -i'
@@ -163,7 +162,7 @@ pm-suspend (S2R)
 * lsattr
 
 
-#### C4. 显示优化
+### C4. 显示优化
 * grep='grep --color=always'
 * ls='ls --color=auto'
 * tree
@@ -172,7 +171,7 @@ pm-suspend (S2R)
 
 
 
-#### C5.1 释放磁盘空间
+### C5.1 释放磁盘空间
 
 ```
 sync
@@ -186,7 +185,7 @@ echo ' ' >/tmp/xxx [**不中断服务**]
 ```
 
 
-#### C5.2 挂载磁盘空间
+### C5.2 挂载磁盘空间
 * fat, ntfs 必须用`-o uid=1000, gid=1000, umask=0133, fmask=0133, dmask=0022`挂载
 
             > 否则无法指定权限。因为权限是无法记录在磁盘空间上的，所以必须在mount时指定
@@ -205,18 +204,18 @@ echo ' ' >/tmp/xxx [**不中断服务**]
  
 
 
-#### D1. 找命令参数
+### D1. 找命令参数
 * xxx --help
 * man xxx
 
 
-#### D2. 找文件路径
+### D2. 找文件路径
 * find
 * locate
 * which
 
 
-#### D3. 找其它
+### D3. 找其它
 * dpkg -S \`which man\`
 * apt-cache search xxx
 * history
