@@ -51,7 +51,7 @@ linux中实现目标有很多种方法和选择,  请理性看待它们的不同
 
 
 ### A8.1 鼠标, 键盘, 快捷键
-![正常使用键盘鼠标](/linux-pi/normal-keyboard-mouse.gif)
+![正常使用键盘鼠标](/img/normal-keyboard-mouse.gif)
 
 
 ### A8.2 鼠标, 键盘, 快捷键
