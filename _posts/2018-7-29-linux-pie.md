@@ -1,11 +1,9 @@
 
 # Linux派
 {:.no_toc}
-<br>
-<br>
-
 * 目录
 {:toc}
+<br>
 
 ## A. 派别
 ---
