@@ -1,9 +1,12 @@
+---
+layout: default
+title: Linux派
+tags: linux, vim
+commentIssueId: 1
+---
 
-# Linux派
-{:.no_toc}
 * 目录
 {:toc}
-<br>
 
 ## A. 派别
 ---
