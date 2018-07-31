@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Example!"
+title:  "testtest"
 categories: jekyll news
 issueID: 1
 ---
