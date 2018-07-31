@@ -1,8 +1,8 @@
 ---
-layout: default
-title: Linux派
+layout: post
+title: "Linux派"
 tags: linux, vim
-commentIssueId: 1
+issueID: 1
 ---
 
 * 目录
