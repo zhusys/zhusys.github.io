@@ -5,7 +5,6 @@ issueID: 1
 ---
 
 # Linux派
-
 {:.no_toc}
 * 目录
 {:toc}
