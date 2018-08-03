@@ -1,15 +1,9 @@
 ---
-layout: default
-tags: linux, vim
+layout: post
+title: Linux派
+tags: [linux, vim]
 issueID: 1
 ---
-
-# Linux派
-{:.no_toc}
-
-* 目录
-{:toc}
-<br>
 
 ## A. 派别
 ---

@@ -1,5 +1,7 @@
-theme: jekyll-theme-cayman
+timezone: Asia/Shanghai
+encoding: utf-8
 markdown: kramdown
+input: GFM
 github_username:  zhusys
 repository_name: zhusys.github.io
 
