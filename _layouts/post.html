@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div id="content" class="col-md-9 col-sm-9 col-xs-12">
+  <div id="content_header">
+  <h1>{{ page.title }}</h1>
+  <div>发表于：{{ page.date | date:"%Y-%m-%d" }}</div>
+  <div>标签：
+    {% for tag in page.tags %}
+    <a href="/tags.html#{{ tag }}">{{ tag }}</a>,
+    {% endfor %}
+  </div>
+  <hr/>
+  </div>
+  <div id="content_body">
+  {{ content }}
+  </div>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#content_body img').addClass('img-responsive');
+  initToc($('#affix-nav'));
+  initTocAffix($('#affix-nav > ul'));
+});
+</script>
+</div>
+<nav id="affix-nav" class="sidebar col-md-3 col-sm-3 hidden-xs"></nav>
+{% if jekyll.environment == "production" %}
+<div id="comment" class="col-md-9 col-sm-9 col-xs-12">
+<hr/>
+<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+</div>
+{% endif %}
