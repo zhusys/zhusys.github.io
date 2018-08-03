@@ -34,13 +34,15 @@ xhr.send();
 getJSON('https://api.github.com/repos/{{site.github_username}}/{{site.repository_name}}/issues/{{page.issueID}}/comments',
   function(data){
     var comments = "";
+    var mytime = "";
     for (i = 0; i < data.length; i++) {
       //add avatar
       comments += '<a href="'+data[i].user.html_url+'" target="_blank"><img src="'+data[i].user.avatar_url+'"></a>';
       //add username and link to profile page
-      //mydatetime = (new Date(date[i].updated_at)).toLocaleString('zh-CN',{hour12:false})
-      mydatetime = (new Date("2018-07-31T04:23:32Z")).toLocaleString('zh-CN',{hour12:false})
-      alert(mydatetime)
+      mytime = data[i].updated_at;
+      mydatetime = (new Date(mytime)).toLocaleString('zh-CN',{hour12:false});
+      //mydatetime = (new Date("2018-07-31T04:23:32Z")).toLocaleString('zh-CN',{hour12:false})
+      //alert(mydatetime)
       //alert(data[i].updated_at)
       //comments +='  <a href="'+data[i].html_url+'" target="_blank">'+data[i].user.login+' - '+data[i].updated_at+'</a>';
       comments +='  <a href="'+data[i].html_url+'" target="_blank">'+data[i].user.login+' - '+mydatetime+'</a>';
