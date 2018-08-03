@@ -38,9 +38,9 @@ getJSON('https://api.github.com/repos/{{site.github_username}}/{{site.repository
       //add avatar
       comments += '<a href="'+data[i].user.html_url+'" target="_blank"><img src="'+data[i].user.avatar_url+'"></a>';
       //add username and link to profile page
-      //mydatetime = new Date(date[i].updated_at).toLocaleString('zh-CN',{hour12:false})
-      //alter(mydatetime)
-      alert(data[i].updated_at)
+      mydatetime = new Date(date[i].updated_at).toLocaleString('zh-CN',{hour12:false})
+      alert(mydatetime)
+      //alert(data[i].updated_at)
       comments +='  <a href="'+data[i].html_url+'" target="_blank">'+data[i].user.login+' - '+data[i].updated_at+'</a>';
       //add comment
       comments += '<p>'+data[i].body+'</p>';
