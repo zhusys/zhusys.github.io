@@ -22,9 +22,7 @@ title: zhusys Blog 首页
   </td>
   <td>
   <!--a href="/tags.html#{{ tag }}"-->
-    {% for tag in page.tags %}
-    <a href="/tags.html#{{ tag }}">{{ tag }}</a>,
-    {% endfor %}
+    {{ post.tag }}
   <!--/a-->
   </td>
 </tr>
