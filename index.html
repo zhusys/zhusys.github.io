@@ -21,9 +21,11 @@ title: zhusys Blog 首页
   </a>
   </td>
   <td>
-  <a href="/tags.html#{{ tag }}">
-    {{ tag }}
-  </a>
+  <!--a href="/tags.html#{{ tag }}"-->
+    {% for tag in page.tags %}
+    <a href="/tags.html#{{ tag }}">{{ tag }}</a>,
+    {% endfor %}
+  <!--/a-->
   </td>
 </tr>
 {% endfor %}
