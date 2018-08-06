@@ -1,6 +1,7 @@
 ---
 layout: post
 title: python用数学关系和坐标打印点图
+tags: math, python
 tag: [math, python]
 issueID: 2
 ---

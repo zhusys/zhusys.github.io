@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Linux派
-tag: linux, vim
+tags: linux, vim
+tag: [linux, vim]
 issueID: 1
 ---
 
