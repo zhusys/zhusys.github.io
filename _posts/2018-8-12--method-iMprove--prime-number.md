@@ -3,7 +3,7 @@ layout: post
 title: python计算质数的方法和改进
 taggs: math, python
 tag: [math, python]
-issueID: 3
+issueID: 4
 ---
 
 # 充分利用前面已经查找出来的质数结果, 继续进行查找质数
