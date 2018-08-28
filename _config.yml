@@ -1,3 +1,4 @@
+theme: jekyll-theme-cayman
 timezone: +0800
 encoding: utf-8
 kramdown:
