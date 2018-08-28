@@ -6,3 +6,5 @@ kramdown:
 github_username:  zhusys
 repository_name: zhusys.github.io
 
+
+theme: jekyll-theme-slate
