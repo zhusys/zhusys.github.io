@@ -485,7 +485,8 @@ th{
 	font-family:'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	padding:10px;
 	background:#737373;
-	color:#fff
+	color:#fff;
+	border:1px solid #373737;
 }
 
 td{
