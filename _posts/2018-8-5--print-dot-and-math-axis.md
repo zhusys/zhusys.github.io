@@ -5,6 +5,7 @@ taggs: math, python
 tag: [math, python]
 issueID: 3
 ---
+
 ## 用数学方程式关系和坐标系观点,用两个for循环模拟xy轴,来控制点在图的位置,同时还能可以比较方便的变换图形
 ```
            |
